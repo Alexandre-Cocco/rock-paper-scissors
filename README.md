@@ -15,3 +15,5 @@ type the command : `npm install`
 
 type the command: `npm run build`
 
+
+optimized for google chrome 
