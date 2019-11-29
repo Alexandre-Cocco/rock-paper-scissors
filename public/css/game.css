@@ -86,7 +86,14 @@ body {
 	border: 1px solid grey;
 	width: 300px;
 	text-align: center;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
+.player-small > .player-score {
+    font-size: 47px;
+}
+
 .player-score {
 	font-size: 82px;
 	font-family: 'Grand Hotel',cursive;
@@ -96,8 +103,29 @@ body {
 	border: 1px solid grey;
 	padding: 20px;
 	outline: none;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
 }
-.rounded-circle > img {
-	width: 200px;
+input[type=text] {
+    width: 300px !important;
+}
+button:focus {
+    outline: none;
+    border: none;
 }
 
+.rounded-circle > img {
+	width: 200px;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
+.rounded-circle > img:hover {
+    width: 220px;
+}
+
+.change-mode a {
+    color: #FFFFFF;
+    font-size: 10px;
+}
