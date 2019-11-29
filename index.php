@@ -26,7 +26,7 @@
                     <a href="#" v-if="gameMode == 'player'" @click="gameMode = 'computer'">Change to computer VS computer mode ?</a>
                     <a href="#" v-else @click="gameMode = 'player'">Change to player VS computer mode ?</a>
                     <a class="ml-2 mr-2"> or </a>
-                    <a href="#" @click="resetGame()">Reset Game ?</a>
+                    <a href="#" @click="resetGame('player')">Reset Game ?</a>
                 </div>
 	            <div class="d-flex justify-content-around" v-if="isGameStarted">
 				    <div class="player p-3">

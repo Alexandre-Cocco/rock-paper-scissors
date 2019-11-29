@@ -15,11 +15,12 @@ var app = new Vue({
     },
     watch: {
         gameMode: function () { // if game mode switched, restart game
-            this.resetGame()
+            this.resetGame(this.gameMode)
         },
     },
     methods: {
-        resetGame: function () {
+        resetGame: function (gameMode) {
+            this.gameMode = gameMode
             this.players = getPlayersDefaultData()
             this.resultLastGame = null
             this.isGameStarted = false
@@ -28,6 +29,7 @@ var app = new Vue({
         },
         launchGame: function () {
             if (this.gameMode == 'player') {
+                this.gameMode = 'player'
                 if (this.players[0].name) {
                     this.isGameStarted = true
                 } else {
@@ -48,7 +50,7 @@ var app = new Vue({
         sendChoices: function () {
             let that = this
             this.showErrorAjax = false
-            axios.get('../controller/gameController.php', {
+            axios.get('./controller/gameController.php', {
                 params: {
                     action: 'select',
                     userAction: this.players[0].lastAction,
