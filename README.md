@@ -2,6 +2,7 @@
 Game Rock Paper Scissors
 
 set up an environment working for PHP
+
 install Node because we will need to retrieve node modules
 
 open a terminal and change directory to your web server
