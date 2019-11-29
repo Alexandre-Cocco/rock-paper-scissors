@@ -16,7 +16,6 @@ class GameService
 
     function computeGame()
     {
-        echo EVAL_GAME[$this->userAction][$this->computerAction];die;
         return EVAL_GAME[$this->userAction][$this->computerAction];
     }
 }

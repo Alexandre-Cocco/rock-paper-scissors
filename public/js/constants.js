@@ -13,7 +13,7 @@ export const getPlayersDefaultData = () => {
     ]
 }
 
-export const getImages = () => {
+export const getImages = () => {  // return paths of images  for vue elements
     return {
         paper: 'public/img/paper.png',
         rock: 'public/img/rock.png',
