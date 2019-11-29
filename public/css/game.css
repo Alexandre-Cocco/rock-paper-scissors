@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+.main{
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+.cover{
+    position: fixed;
+    opacity: 1;
+    background-color: rgba(0,0,0,.6);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.main .logo{
+    color: #FFFFFF;
+    font-size: 56px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
+    z-index: 3;
+}
+.main .logo.cursive{
+    font-family: 'Grand Hotel',cursive;
+    font-size: 82px;
+
+}
+.main .content{
+    position: relative;
+    z-index: 4;
+}
+.main .motto{
+    min-height: 140px;
+}
+.main .motto, .main .subscribe .info-text{
+    font-size: 28px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    text-align: center;
+    margin-top: 50px;
+
+}
+.main .subscribe .info-text{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.player {
+	border-radius: 10px;
+	border: 1px solid grey;
+	width: 300px;
+	text-align: center;
+}
+.player-score {
+	font-size: 82px;
+	font-family: 'Grand Hotel',cursive;
+}
+.rounded-circle {
+	border-radius: 50%;
+	border: 1px solid grey;
+	padding: 20px;
+	outline: none;
+}
+.rounded-circle > img {
+	width: 200px;
+}
+
